@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Name: Tanner Jenkins-->
+<!-- PROG Purpose: This will contain definitions for chapter 4: Networking and Internet -->
+
+<head>
+    <title> Operating Systems </title>
+    <style>
+        a {text-decoration: none;}
+        a:link{color: #4588e5}
+        a:visited{color:#60066e}
+        a:hover{text-underline-position: below;}
+        a:active{color:#e0c0ff}
+    </style>
+</head>
+
+<body style = "background-color: #000000; font-family: Arial, Helvetica, sans-serif; background-image: url(ch4img.png);">
+<table border="2" style="width:800px; color: #ffffff; background-color: #1f19bd; margin: auto;">
+<tr>
+    <td><a href="index.html">HOME</a></td>
+    <td><a href="https://www.pvcc.edu/">PVCC</a></td>
+    <td><a href="https://www.w3schools.com/">W3SCHOOLS</a></td>
+    <td><a href="contactus.html">CONTACT US</a></td>
+</tr>
+<tr><td colspan="4">
+    <h1>Chapter 4 Networking & The Internet</h1>
+
+<table border="1" style = "width: 100%; margin:auto;">
+    <tr><td>
+<h2>Network Classifications</h2>
+    <ul>
+        <li>LAN- Local Area Network. Usually a collection of computers in a single building or complex.</li>
+        <li>MAN- Metropolitan Area Network. Computers connected in an intermediate are, such as a local community.</li>
+        <li>WAN- Wide Area Network. Links machines over a greater distance. Could be across town or across the world.</li>
+    </ul>
+<h2>Network Models</h2>
+    <ul>
+        <li>Bus Network- Method of computer communication where all machines are connected to a central communication line.</li>
+        <li>Star Network- Communication method where all machines are connected to a central computer or server.</li>
+    </ul>    
+<h2>Protocols</h2>
+    <ul>
+        <li>CSMA/CD Ethernet-  Carrier Sense, Multiple Access with Collision Detection. Protocol that dictates that each message be broadcast to all the machines on the bus. Each machine only keeps what data is addressed to itself.</li>
+        <li>CSMA/CD Wifi- Carrier Sense, Multiple Access with Collision Avoidance. Focuses on avoiding two machines transmitting at one time (collisions).</li>
+    </ul>
+<h2>Combining Networks:</h2>
+    <ul>
+        <li>Repeater- Passes signals back and forth between buses. Does not consider the meaning of the signals.</li>
+        <li>Bridge- A more complex repeater. Connects two buses, but takes the destination into consideration and only sends a message across the connection only when that message is destined for a computer on the other side. More efficient than a repeater.</li>
+        <li>Switch- Essentially a bridge with multiple connections, allowing it to connect several buses rather than just two. Still considers the destination of the signal in order to minimize traffic across spokes.</li>
+        <li>Router- Provides links between networks while allowing each network to maintain its unique internal characteristics.</li>
+        <li>Gateway- The point at which one network is linked to an internet. This is because it serves as a passageway between the network and the outside world.</li>
+    </ul>
+<h2>Client/Server Model</h2>
+    <ul>
+        <li>P2P: Peer to Peer- Involves processes that provide service to and receive service from each other.</li>
+        <li>Distributed System-  Many modern software systems, such as global information retrieval systems, company-wide accounting and inventory systems, computer games, and even the software that controls a network's infrastructure itself are designed as distributed systems, meaning that they consist of software units that execute as processes on different computers.</li>
+        <li>Cloud Computing- Cloud computing, whereby huge pools of shared computers on the network can be allocated for use by clients as needed.</li>
+    </ul>
+<h2>Internet Adressing</h2>
+    <ul>
+        <li>Teir 1- ISPs that consist of very high-speed, high-capacity, international WANs.</li>
+        <li>Teir 2- ISPs that tend to be more regional in scope and less potent in their capabilities.</li>
+        <li>Teir 3- Access or tier-3 ISP. An access ISP is essentially an independent Internet, sometimes called an intranet, operated by a single authority that is in the business of supplying Internet access to individual homes and businesses.</li>
+    </ul>
+<h2>IP Adress</h2>
+    <ul>
+        <li><a href="https://www.icann.org">ICANN</a></li>
+        <li>DNS- Domain Name System, translates domain names into IP addresses so browsers can load internet resources.</li>
+        <li>TLD: Top-Level Domain- As an example, the domain name of Marquette University is . Note the suffix following the period. It is used to reflect the domain's classification, which in this case is “educational,” as indicated by the  suffix. These suffixes are called top-level domains (TLDs).</li>
+        <li><a href="https://www.worldstandards.eu/other/tlds/">Country-Code TLDs</a></li>
+    </ul>
+<h2>Internet Protocols</h2>
+    <ul>
+        <li>FTP- An application for accessing another computer from a great distance used the Telnet protocol, or later, the Secure Shell (SSH) protocol.</li>
+        <li>HTTP- As webservers and browsers have become more sophisticated, more and more of these traditional network applications have come to be handled by webpages via the powerful Hyper Text Transfer Protocol.</li>
+        <li>SMTP- Simple Mail Transfer Protocol defines a way that two computers on the network may interact when transmitting an email message from one host to the other.</li>
+    </ul>  
+<h2>World Wide Web</h2>
+    <ul>
+        <li>URL- In order to locate and retrieve documents on the Web, each document is given a unique address called a Uniform Resource Locator (URL).</li>
+        <li>Client-Side Activities- Activities if they are performed by a client (such as a browser).</li>
+        <li>Server-Side Activities- Activities if they are performed by a server (such as a webserver)</li>
+    </ul>
+<h2>Internet Four-Layer Software</h2>
+    <ul>
+        <li>Application Layer- A message typically originates in the application layer.</li>
+        <li>Transport Layer- Sequence numbers to the small segments it produces so that the segments can be reassembled at the message's destination.</li>
+        <li>Network Layer- Decides in which direction a packet should be sent at each step along the packet's path through the Internet.</li>
+        <li>Link Layer- Has the responsibility of transferring the packet.</li>
+    </ul>
+<h2>Internet Is:</h2>
+    <ul>
+        <li>Packet Switching Network- Transfers small pieces of data across various networks.</li>
+        <li>Fault Tolerant- Enables the operationg system to respond to a failure in hardware or software.</li>
+        <li>Rdedundant- Keeping data in multiple places within a database or storage system.</li>
+    </ul>
+<h2>Cybersecurity</h2>
+    <ul>
+        <li>Malware- Software meant to harm the computer.</li>
+        <li>Virus- Inserts itself into programs already existing in the machine.</li>
+        <li>Worm- Resides in computers and, through a network, forwards copies of itself to other computers.</li>
+        <li>Trojan Horse- Disguises itself as a desireable program, only to perform other activies not intended by the user.</li>
+        <li>Spyware- Collects information about activities on the computer and reports that information back to the instigator of the attack.</li>
+        <li>Phishing- Obtaining information by asking for it, typically for a false purpose or promise.</li>
+        <li>DDos Attack- A denial of service attack spread over many hosts.</li>
+    </ul>
+<h2>Protection</h2>
+    <ul>
+        <li>Firewall-Filters traffic passing through a point on the network.</li>
+        <li>Spam Filter- Firewalls designed to block unwanted email.</li>
+        <li>Proxy Server- A proxy server is a software unit that acts as an intermediary between a client and a server with the goal of shielding the client from adverse actions of the server.</li>
+        <li>Antivirus Software- Used to detect and remove the presence of known viruses and other infections.</li>
+        <li>Cryptography- The study of sending and receiving messages securely in the presence of adversaries.</li>
+        <li>Public Key Encryption- Involves techniques by which the encryption and decryption algorithms are known, and one of the keys is known, but the encoded message remains secure.</li>
+    </ul>
+</tr></td>
+</table>
+</table>
+</body>
+</html>
