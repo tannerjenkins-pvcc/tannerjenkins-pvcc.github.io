@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Name: Tanner Jenkins-->
+<!-- PROG Purpose: This will contain definitions for chapter 5: Programming Algorithms and Software Testing -->
+
+<head>
+    <title> Chapter 5 </title>
+    <style>
+        a {text-decoration: none;}
+        a:link{color: #5c9ffd}
+        a:visited{color:#bb4acc}
+        a:hover{text-underline-position: below;}
+        a:active{color:#e0c0ff}
+        /* Definining different levels of indentation as per chat gpt's suggestion */
+        .indent-1 {margin-left: 40px;}
+        .indent-2 {margin-left: 80px;}
+    </style>
+</head>
+
+<body style = "background-color: #000000; font-family: Arial, Helvetica, sans-serif; background-image: url(ch5progalgimg.jpg); font-size: large;">
+<table border="2" style="width:800px; border-color: #000000; color: #ffffff; background-color: #284e12; margin: auto;">
+<tr>
+    <td><a href="index.html">HOME</a></td>
+    <td><a href="https://www.pvcc.edu/">PVCC</a></td>
+    <td><a href="https://www.w3schools.com/">W3SCHOOLS</a></td>
+    <td><a href="contactus.html">CONTACT US</a></td>
+</tr>
+<tr><td colspan="4">
+    <h1>Chapter 5: Programming Algorithms and Software Testing</h1>
+
+<table border="1" style = "width: 100%; margin:auto;">
+    <tr><td>
+<h2>Phases of Computer Development:</h2>
+    <ol>
+        <li>Phase 1: Understand the problem</li>
+        <li>Phase 2: Design and algorithm to solve the problem</li>
+        <li>Phase 3: Write the program code in an appropriate language based on the algorithm</li>
+        <li>Phase 4: Enter the program and save</li>
+        <li>Phase 5: Execute the program</li>
+        <li>Phase 6: Test the program, find errors and debug, then retest</li>
+        <li>Phase 7: Document and evaluate the program</li>
+    </ol>
+<h2>Programming Structures:</h2>
+    <ul>
+        <li>Sequential structure: Top-down execution</li>
+        <li>Decision structures: if/then/else</li>
+        <li>Iterative (Looping):</li>
+            <li class="indent-1">While loop: continue looping <b>as long as</b> something is true</li>
+            <li class="indent-1">Repeat/ until loop: continue looping <b>until</b> something is true</li>
+            <li class="indent-1">For loop: loop a given number of times</li>
+        <li>Recursive structures:</li>
+            <li class="indent-1">Repeat a set of instructions as a subtask of itself</li>
+            <li class="indent-1">Repitition continues until:</li>
+                <li class="indent-2">degenerative case, which is a termination contition, is met</li>
+                <li class="indent-2">(degenerative case is also called a "base case")</li>
+    </ul>   
+<h2>Two classic programming/ database problems:</h2>
+    <ul>
+        <li>Sorting: Descending order/ Ascending order</li>
+            <li class="indent-1">Sorting numbers</li>
+            <li class="indent-1">Sorting strings (in accordance with ASCII values)</li>
+        <li>Searching: find specific data that meet a certain criteria</li>
+            <li class="indent-1"> In database:</li>
+                <li class="indent-2">Filters: temporary search</li>
+                <li class="indent-2">Queries: search criteria are saved so they so they don't have to be recreated</li>
+        <li>Two popular search techniques:</li>
+            <li class="indent-1">Sequential search: search from top to bottom or bottom to top, one item at a time</li>
+            <li class="indent-1">Binary Search:</li>
+                <li class="indent-2">only works if data is SORTED first</li>
+                <li class="indent-2">start in the middle, then go to half of that, etc.</li>
+    </ul>
+<h2>Two classic program goals:</h2>
+    <ul>
+        <li>Efficiency: Program takes minimal time/ resources</li>
+        <li>Correctness: Program runs in expected ways and works for all expected conditions</li>
+    </ul>
+    <!--Make sure to actually fill out definitions for these. Thanks pal.-->
+<h2>Software testing and verification</h2>
+    <ul>
+            <li>Kinds of tests:</li>
+                <li class="indent-1">Acceptance testing: Verifying whether the whole system works as intended.</li>
+                <li class="indent-1">Integration testing: Ensuring that software components or functions operate together.</li>
+                <li class="indent-1">Unit testing: Validating that each software unit runs as expected. A unit is the smallest testable component of an application.</li>
+                <li class="indent-1">Functional testing: Checking functions by emulating business scenarios, based on functional requirements. Black-box testing is a common way to verify functions.</li>
+                <li class="indent-1">Performance testing: Testing how the software runs under different workloads. Load testing, for example, is used to evaluate performance under real-life load conditions.</li>
+                <li class="indent-1">Regression testing: Checking whether new features break or degrade functionality. Sanity testing can be used to verify menus, functions and commands at the surface level, when there is no time for a full regression test.</li>
+                <li class="indent-1">Usability testing: Validating how well a customer can use a system or web application to complete a task.</li>
+            <li>Software testing is done to prevent:</li>
+                <li class="indent-1">Architectural flaws</li>
+                <li class="indent-1">Poor design decisions</li>
+                <li class="indent-1">Invalid or incirrect functionality</li>
+                <li class="indent-1">Security vulnerabilities</li>
+                <li class="indent-1">Scalability issues</li>
+            <li>Testing best practices:</li>
+                <li class="indent-1">Continous testing: Project teams test each build as it becomes available. This type of software testing relies on test automation that is integrated with the deployment process. It enables software to be validated in realistic test environments earlier in the process, which improves design and reduces risks.</li>
+                <li class="indent-1">Configuration management: Organizations centrally maintain test assets and track what software builds to test. Teams gain access to assets such as code, requirements, design documents, models, test scripts and test results. Good systems include user authentication and audit trails to help teams meet compliance requirements with minimal administrative effort.</li>
+                <li class="indent-1">Servic virtualization: Testing environments might not be available, especially early in code development. Service virtualization simulates the services and systems that are missing or not yet completed, enabling teams to reduce dependencies and test sooner. They can reuse, deploy and change a configuration to test different scenarios without having to modify the original environment.</li>
+                <li class="indent-1">Defect or "bug tracking": Monitoring defects is important to both testing and development teams for measuring and improving quality. Automated tools allow teams to track defects, measure their scope and impact, and uncover related issues.</li>
+                <li class="indent-1">Metrics and reporting: Reporting and analytics enable team members to share status, goals and test results. Advanced tools integrate project metrics and present results in a dashboard. Teams quickly see the overall health of a project and can monitor relationships between test, development and other project elements.</li>
+                <img src="ch5algorithms.png" style="width:70%; display:block; margin: auto;"">    
+            <li><a href="https://www.ibm.com/topics/software-testing">From: IBM What is software testing?</a></li>
+    </ul>
+
+</tr></td>
+</table>
+</table>
+</body>
+</html>
