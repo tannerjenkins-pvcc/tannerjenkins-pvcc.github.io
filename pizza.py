@@ -62,7 +62,7 @@ def perform_calculations():
     global size, cost_pizza, cost_drinks, cost_breadsticks, taxamt, total, subtotal
 
     for i in range(len(PIZZA_SIZE)):
-        if type_pizza == PIZZA_PRICE[i]:
+        if type_pizza == PIZZA_SIZE[i]:
             cost_pizza = num_pizzas * PIZZA_PRICE[i]
 
     cost_drinks = num_drinks * DRINK_PRICE
